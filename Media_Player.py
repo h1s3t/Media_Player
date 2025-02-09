@@ -14,14 +14,14 @@ current_song = songs[i]
 playing = False
 played = True
 #Картинки
-play = PhotoImage(file = r"C:/python_projects/Media_Player/buttons/play.png")
-stop = PhotoImage(file = r"C:/python_projects/Media_player/buttons/stop.png")
-next_song = PhotoImage(file = r"C:/python_projects/Media_player/buttons/next.png")
-previous_song = PhotoImage(file = r"C:/python_projects/Media_player/buttons/previous.png")
-quit_img = PhotoImage(file = r"C:/python_projects/Media_player/buttons/quit.png")
-md_ico = ImageTk.PhotoImage(Image.open('C:/python_projects/Media_player/icos/md_ico.png'))
-mk_ico = ImageTk.PhotoImage(Image.open('C:/python_projects/Media_player/icos/mk_ico.png'))
-au_ico = ImageTk.PhotoImage(Image.open('C:/python_projects/Media_player/icos/13a_ico.png'))
+play = PhotoImage(file = r"buttons/play.png")
+stop = PhotoImage(file = r"buttons/stop.png")
+next_song = PhotoImage(file = r"buttons/next.png")
+previous_song = PhotoImage(file = r"buttons/previous.png")
+quit_img = PhotoImage(file = r"buttons/quit.png")
+md_ico = ImageTk.PhotoImage(Image.open('icos/md_ico.png'))
+mk_ico = ImageTk.PhotoImage(Image.open('icos/mk_ico.png'))
+au_ico = ImageTk.PhotoImage(Image.open('icos/13a_ico.png'))
 #Обновление переменных
 def update_playing():
     global playing
@@ -37,21 +37,21 @@ def play_func():
         btn_play.config(command=stop_func)
         if current_song == songs[0]:
             if played:
-                pygame.mixer.music.load('13aurora - red crystal castles.mp3')
+                pygame.mixer.music.load('Media_Player/13aurora - red crystal castles.mp3')
                 pygame.mixer.music.play()
                 played = False
             if played == False:
                 pygame.mixer.music.unpause()
         elif current_song == songs[1]:
             if played:
-                pygame.mixer.music.load('Mr. Kitty - After Dark.mp3')
+                pygame.mixer.music.load('Media_Player/Mr. Kitty - After Dark.mp3')
                 pygame.mixer.music.play()
                 played = False
             if played == False:
                 pygame.mixer.music.unpause()
         elif current_song == songs[2]:
             if played:
-                pygame.mixer.music.load('Молчат Дома - Клетка.mp3')
+                pygame.mixer.music.load('Media_Player/Молчат Дома - Клетка.mp3')
                 pygame.mixer.music.play()
                 played = False
             if played == False:
