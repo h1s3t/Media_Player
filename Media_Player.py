@@ -14,14 +14,14 @@ current_song = songs[i]
 playing = False
 played = True
 #Картинки
-play = PhotoImage(file = r"buttons/play.png")
-stop = PhotoImage(file = r"buttons/stop.png")
-next_song = PhotoImage(file = r"buttons/next.png")
-previous_song = PhotoImage(file = r"buttons/previous.png")
-quit_img = PhotoImage(file = r"buttons/quit.png")
-md_ico = ImageTk.PhotoImage(Image.open('icos/md_ico.png'))
-mk_ico = ImageTk.PhotoImage(Image.open('icos/mk_ico.png'))
-au_ico = ImageTk.PhotoImage(Image.open('icos/13a_ico.png'))
+play = PhotoImage(file = r"Media_Player/buttons/play.png")
+stop = PhotoImage(file = r"Media_Player/buttons/stop.png")
+next_song = PhotoImage(file = r"Media_Player/buttons/next.png")
+previous_song = PhotoImage(file = r"Media_Player/buttons/previous.png")
+quit_img = PhotoImage(file = r"Media_Player/buttons/quit.png")
+md_ico = ImageTk.PhotoImage(Image.open('Media_Player/icos/md_ico.png'))
+mk_ico = ImageTk.PhotoImage(Image.open('Media_Player/icos/mk_ico.png'))
+au_ico = ImageTk.PhotoImage(Image.open('Media_Player/icos/13a_ico.png'))
 #Обновление переменных
 def update_playing():
     global playing
